@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import dangus from "../../assets/barse.jpg";
+import dangus from "../../assets/panorama.jpg";
 
 export function HomePage() {
   const [text, setText] = useState("");
@@ -35,15 +35,17 @@ export function HomePage() {
           padding: "10px"
         }}
       >
-        Metelių apžvalgos bokštas
+        Apžvalgos bokštas Meteliai
       </Link>
 
       <div className="cont">
         <img src={dangus} className="image" alt="apzvalgosbokstas" />
 
         <form onSubmit={handleFormSubmit}>
+          <p>Čia įvedamas tekstas nebus naudojamas trečiųjų šalių</p>
+          <p>Jis yra naudojamas tik mokymosi tikslais</p>
           <label htmlFor="search">
-            Enter what you want to search (max 40 characters)
+            Įvesti pageidaujamą tekstą (max 20 characters)
           </label>
 
           <input

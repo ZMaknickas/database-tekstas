@@ -7,14 +7,14 @@ export async function postForm(req, res) {
   if (!text || text.trim() === "") {
     return res.status(400).json({
       status: 'error',
-      message: 'Search text required',
+      message: 'Text required',
     });
   }
 
   try {
     const [result] = await connection.execute(
       `
-        INSERT INTO search (text)
+        INSERT INTO tekstas (text)
         VALUES (?)
       `,
       [

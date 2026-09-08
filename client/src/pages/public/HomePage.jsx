@@ -11,7 +11,7 @@ export function HomePage() {
     e.preventDefault();
     setFormSuccess("");
 
-    fetch("http://localhost:5531/api/forms", {
+    fetch("/api/forms", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),

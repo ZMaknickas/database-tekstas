@@ -3,6 +3,5 @@ node_modules
 .vscode
 db.js
 env.js
-.env.example
-.env.production
-.env.development
+.env
+.env.*

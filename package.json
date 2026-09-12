@@ -9,7 +9,7 @@
   "install-all": "npm-run-all --parallel client:install server:install",
   "client:install": "npm --prefix ./client/ install",
   "server:install": "npm --prefix ./server/ install",
-  "build": "npm --prefix ./client run build",
+  "build": "npm run install-all && npm --prefix ./client run build",
   "start": "npm --prefix ./server run start",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
